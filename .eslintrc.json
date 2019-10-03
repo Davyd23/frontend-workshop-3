@@ -1,0 +1,67 @@
+{
+  "extends": ["airbnb", "prettier"],
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true,
+    "jest": true
+  },
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "rules": {
+    "comma-dangle": [
+      2,
+      {
+        "arrays": "always-multiline",
+        "objects": "always-multiline",
+        "imports": "always-multiline",
+        "exports": "always-multiline",
+        "functions": "ignore"
+      }
+    ],
+    "func-names": ["error", "always"],
+    "linebreak-style": ["error", "unix"],
+    "no-plusplus": 0,
+    "no-var": "error",
+    "object-shorthand": ["error", "always"],
+    "semi": ["error", "never"],
+    "jsx-a11y/label-has-for": [
+      2,
+      {
+        "components": ["Label"],
+        "required": {
+          "every": ["id"]
+        },
+        "allowChildren": false
+      }
+    ],
+    "indent": ["error", 2, { "SwitchCase": 1 }],
+    "no-param-reassign": "off",
+    "no-nested-ternary": "off",
+    "no-underscore-dangle": 0,
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "react/jsx-one-expression-per-line": "off",
+    "react/require-default-props": false,
+    "react/destructuring-assignment": false,
+    "import/no-named-as-default": false,
+    "import/no-extraneous-dependencies": false,
+    "import/prefer-default-export": false,
+    "quotes": ["error", "single"],
+    "quote-props": ["error", "as-needed"],
+    "eol-last": ["error", "always"],
+    "yoda": [2,"never", { "exceptRange": true }],
+    "consistent-return": "off"
+  },
+  "settings": {
+    "import/resolver": {
+      "alias": [
+        ["~", "./js"]
+      ]
+    }
+  }
+}

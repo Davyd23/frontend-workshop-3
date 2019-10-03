@@ -1,0 +1,36 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Any built assets
+src/main/resources/static
+src/main/resources/templates/index.html
+
+# Dependency directories
+node_modules
+
+# Optional eslint cache
+.eslintcache
+
+# OS files
+.DS_Store
+
+# IDE config
+.vscode
+.idea/*
+postal-ui.iml
+jsconfig.json
+
+# local dev only files
+/target/
+client/node/
+local-server.sh
